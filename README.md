@@ -1,6 +1,8 @@
 # Pulsoid Client
 
-Custom client for [Pulsoid](https://pulsoid.net/).
+![](https://user-images.githubusercontent.com/3516343/125148625-c1435680-e16e-11eb-8c6d-de44271d6a4e.png)
+
+My Custom client for [Pulsoid](https://pulsoid.net/).
 
 ## Usage
 
