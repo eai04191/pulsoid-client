@@ -9,7 +9,11 @@ export const App = () => {
         return <Card socketUrl={socketUrl} />;
     }
 
-    return <div>/?ws=<code>websocket url here</code></div>;
+    return (
+        <div>
+            /?ws=<code>websocket url here</code>
+        </div>
+    );
 };
 
 export default App;
@@ -34,7 +38,7 @@ const Card: React.VFC<{ socketUrl: string }> = ({ socketUrl }) => {
                     "bg-white text-gray-800 text-xl font-bold uppercase leading-none"
                 )}
             >
-                <div className="relative flex flex-col p-4 space-y-1 overflow-hidden">
+                <div className="relative flex flex-col p-4 overflow-hidden">
                     <div
                         className={clsx(
                             "absolute -bottom-4 w-2/6 opacity-0 transition-opacity duration-500",
@@ -45,7 +49,9 @@ const Card: React.VFC<{ socketUrl: string }> = ({ socketUrl }) => {
                     </div>
 
                     <span className={"text-left"}>heart rate</span>
-                    <span className={"text-right text-6xl"}>{heartRate}</span>
+                    <span className={"text-right text-6xl py-1"}>
+                        {heartRate}
+                    </span>
                     <span className={"text-right text-gray-500"}>bpm</span>
                 </div>
             </div>
