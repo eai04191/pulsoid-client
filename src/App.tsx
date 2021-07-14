@@ -1,5 +1,4 @@
 import clsx from "clsx";
-import React from "react";
 import useWebSocket from "react-use-websocket";
 
 export const App = () => {
