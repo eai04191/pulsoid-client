@@ -1,7 +1,6 @@
-import ApexCharts, { Props } from "react-apexcharts";
-import { memo } from "react";
+import ApexCharts from "react-apexcharts";
 
-export type Data = [number,number];
+export type Data = [number, number];
 
 export const Chart: React.VFC<{ data: Data[] }> = ({ data }) => {
     return (
@@ -78,9 +77,9 @@ export const Chart: React.VFC<{ data: Data[] }> = ({ data }) => {
                     enabled: false,
                 },
             }}
-            series={[{ name: "heart rate", data: data }]}
+            series={[
+                { name: "heart rate", data: data },
+            ]}
         />
     );
 };
-
-export const MorizedChart = memo(Chart);

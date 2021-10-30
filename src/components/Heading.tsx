@@ -6,7 +6,7 @@ export const Heading: React.VFC<{
     return (
         <div
             className={clsx(
-                "absolute top-0 left-0 p-4 rounded-br-lg bg-white/50",
+                "absolute top-0 left-0 p-4 rounded-br-lg",
                 className
             )}
         >

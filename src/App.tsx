@@ -1,8 +1,7 @@
 import clsx from "clsx";
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import useWebSocket from "react-use-websocket";
 import { Chart, Data } from "./Chart";
-import useDebounce from "./useDebounce";
 import { Heading } from "./components/Heading";
 
 export const App = () => {
@@ -90,13 +89,13 @@ const Card: React.VFC<{ socketUrl: string }> = ({ socketUrl }) => {
         };
         const response = JSON.parse(event.data) as Response;
 
-        // @ts-ignore
         setData((data) => {
-            const d = [
+            const combinedData: Data[] = [
                 ...data,
                 [response.timestamp, response.data.heartRate],
-            ].slice(-60);
-            return d;
+            ];
+            const sliced = combinedData.slice(-60);
+            return sliced;
         });
     };
 
