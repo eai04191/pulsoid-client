@@ -1,5 +1,5 @@
 import clsx from "clsx";
-import React, { useState } from "react";
+import { useState } from "react";
 import useWebSocket from "react-use-websocket";
 import { Chart, Data } from "./Chart";
 import { Heading } from "./components/Heading";
