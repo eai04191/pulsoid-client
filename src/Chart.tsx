@@ -77,9 +77,7 @@ export const Chart: React.VFC<{ data: Data[] }> = ({ data }) => {
                     enabled: false,
                 },
             }}
-            series={[
-                { name: "heart rate", data: data },
-            ]}
+            series={[{ name: "heart rate", data: data }]}
         />
     );
 };

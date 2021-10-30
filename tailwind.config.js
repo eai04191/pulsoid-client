@@ -1,6 +1,6 @@
 module.exports = {
     purge: ["./src/**/*.hmtl", "./src/**/*.tsx"],
-    mode: 'jit',
+    mode: "jit",
     darkMode: false, // or 'media' or 'class'
     theme: {
         extend: {},

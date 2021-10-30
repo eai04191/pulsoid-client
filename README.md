@@ -9,12 +9,12 @@ My Custom client for [Pulsoid](https://pulsoid.net/).
 ### Get ws URL
 
 1. Launch the default widget.
-  At first it is recommended to start Demo to make sure it works.
+   At first it is recommended to start Demo to make sure it works.
 2. Open DevTools.
 3. Open Network tab.
 4. Enable WS on the filter.
 5. Refresh the page to see one URL.
-  ![](https://i.imgur.com/zl0pNxc.png)
+   ![](https://i.imgur.com/zl0pNxc.png)
 6. Right click and select `Copy` -> `Copy link address`.
 
 ### Open in Client
